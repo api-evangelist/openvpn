@@ -1,0 +1,79 @@
+aid: openvpn
+name: OpenVPN
+description: >-
+  OpenVPN is a secure networking company providing VPN and Zero Trust
+  network access solutions for over 20,000 organizations worldwide,
+  offering both the self-hosted Access Server and the cloud-delivered
+  CloudConnexa managed service. The platform supports encrypted tunnels,
+  identity-based access policies, content filtering, IDS/IPS, and
+  domain-based traffic rules across major cloud providers. OpenVPN exposes
+  an XML-RPC management API for Access Server and an OAuth 2.0 protected
+  REST API for CloudConnexa.
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - VPN
+  - Zero Trust
+  - Network Security
+  - Remote Access
+  - Identity
+  - Cloud Security
+url: >-
+  https://raw.githubusercontent.com/api-evangelist/openvpn/refs/heads/main/apis.yml
+created: '2026-05-11'
+modified: '2026-05-11'
+specificationVersion: '0.19'
+apis:
+  - aid: openvpn:cloudconnexa-api
+    name: CloudConnexa Public API
+    description: >-
+      REST API for managing CloudConnexa Zero Trust networks, users,
+      networks, connectors, DNS, routes, and access policies. Authentication
+      uses OAuth 2.0 client credentials grant; API credentials are
+      generated from the CloudConnexa Admin Portal.
+    humanURL: https://openvpn.net/cloud-docs/developer/cloudconnexa-api.html
+    baseURL: https://myaccount.openvpn.com/api/beta
+    tags:
+      - VPN
+      - Zero Trust
+      - Cloud Security
+      - REST
+    properties:
+      - type: Documentation
+        url: https://openvpn.net/cloud-docs/developer/cloudconnexa-api.html
+      - type: Getting Started
+        url: https://openvpn.net/cloud-docs/owner/api-documentation/creating-api-credentials.html
+  - aid: openvpn:access-server-xmlrpc
+    name: OpenVPN Access Server XML-RPC API
+    description: >-
+      XML-RPC management API exposing hundreds of methods to control and
+      monitor every aspect of an OpenVPN Access Server deployment, including
+      user provisioning, permissions, configuration, and status. Requires
+      enabling the XML-RPC interface at the full API level on the server.
+    humanURL: https://openvpn.net/as-docs/
+    baseURL: https://<access-server-host>/RPC2/
+    tags:
+      - VPN
+      - XML-RPC
+      - Server Management
+      - Remote Access
+    properties:
+      - type: Documentation
+        url: https://openvpn.net/as-docs/
+
+common:
+  - type: Website
+    url: https://openvpn.net
+  - type: Documentation
+    url: https://openvpn.net/as-docs/
+  - type: CloudConnexa Documentation
+    url: https://openvpn.net/cloud-docs/
+  - type: Pricing
+    url: https://openvpn.net/pricing/
+  - type: Sign Up
+    url: https://openvpn.net/cloudconnexa/
+  - type: Support
+    url: https://support.openvpn.com/hc/en-us
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
