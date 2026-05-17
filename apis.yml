@@ -41,7 +41,7 @@ apis:
     properties:
       - type: Documentation
         url: https://openvpn.net/cloud-docs/developer/cloudconnexa-api.html
-      - type: Getting Started
+      - type: GettingStarted
         url: https://openvpn.net/cloud-docs/owner/api-documentation/creating-api-credentials.html
   - aid: openvpn:access-server-xmlrpc
     name: OpenVPN Access Server XML-RPC API
@@ -70,7 +70,7 @@ common:
     url: https://openvpn.net/cloud-docs/
   - type: Pricing
     url: https://openvpn.net/pricing/
-  - type: Sign Up
+  - type: SignUp
     url: https://openvpn.net/cloudconnexa/
   - type: Support
     url: https://support.openvpn.com/hc/en-us
