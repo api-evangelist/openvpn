@@ -62,6 +62,10 @@ apis:
         url: https://openvpn.net/as-docs/
 
 common:
+  - type: GitHubOrganization
+    url: https://github.com/openvpn
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/openvpn
   - type: Website
     url: https://openvpn.net
   - type: Documentation
