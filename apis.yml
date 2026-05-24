@@ -78,6 +78,8 @@ common:
     url: https://openvpn.net/cloudconnexa/
   - type: Support
     url: https://support.openvpn.com/hc/en-us
+  - type: LLMsTxt
+    url: https://openvpn.net/llms.txt
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
