@@ -74,11 +74,11 @@ common:
     url: https://openvpn.net/cloud-docs/
   - type: Pricing
     url: https://openvpn.net/pricing/
-  - type: SignUp
+  - type: Signup
     url: https://openvpn.net/cloudconnexa/
   - type: Support
     url: https://support.openvpn.com/hc/en-us
-  - type: LLMsTxt
+  - type: LlmsText
     url: https://openvpn.net/llms.txt
 maintainers:
   - FN: Kin Lane
