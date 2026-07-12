@@ -62,6 +62,8 @@ apis:
         url: https://openvpn.net/as-docs/
 
 common:
+  - type: DomainSecurity
+    url: security/openvpn-domain-security.yml
   - type: GitHubOrganization
     url: https://github.com/openvpn
   - type: LinkedIn
@@ -80,6 +82,8 @@ common:
     url: https://support.openvpn.com/hc/en-us
   - type: LlmsText
     url: https://openvpn.net/llms.txt
+  - url: https://blog.openvpn.net/rss.xml
+    type: Blog
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
