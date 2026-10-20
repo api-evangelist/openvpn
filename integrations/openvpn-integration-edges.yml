@@ -33,8 +33,8 @@ edges:
   listing_count: 3
   apps:
   - OpenVPN Access Server / Self-Hosted VPN (PAYG)
-  - CloudConnexa Connector
   - OpenVPN Access Server (BYOL) - Self-Hosted VPN & ZTNA with FREE Connections
+  - CloudConnexa Connector
   seller_name: OpenVPN
   detected_by: sweep-cloud-marketplaces.py
   detected: '2026-10-13'
