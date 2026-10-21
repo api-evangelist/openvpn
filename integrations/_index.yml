@@ -27,3 +27,47 @@
   relationship: distribution-channel
   status: not-a-workflow
   arazzo: null
+- slug: openvpn-homebrew
+  label: Homebrew
+  partner: homebrew
+  partner_name: Homebrew
+  category: official CLI (Homebrew)
+  type: register
+  channel: package-registry
+  evidence: https://formulae.brew.sh/formula/easy-rsa
+  source: edge
+  relationship: distribution-channel
+  contract_reference:
+    register: Homebrew (public package index)
+    spec_file: null
+    packages:
+    - name: easy-rsa
+      kind: formula
+      version: 3.2.7
+      released: null
+      lapsed: false
+      page: https://formulae.brew.sh/formula/easy-rsa
+      cli: 'formula desc: CLI utility to build and manage a PKI CA'
+      repo_leg: github-org:openvpn
+      publisher_leg: artifact-github-org:openvpn
+      matched_by: github-org
+    current: true
+    signal_note: 'the provider''s own command-line tool on a package manager: distribution, not an integration;
+      lapsed = no release in 24 months or deprecated / disabled by the manager'
+    detected_by: sweep-official-clis.py
+    detected: '2026-10-20'
+  status: not-a-workflow
+  arazzo: null
+- slug: openvpn-docker-hub-docker-verified-publisher
+  label: Docker Hub (docker-verified-publisher)
+  partner: docker-hub
+  partner_name: Docker Hub (docker-verified-publisher)
+  category: Docker Verified Publisher
+  type: marketplace
+  marketplace: docker-verified-publisher
+  channel: partner-built
+  evidence: https://hub.docker.com/u/openvpn
+  source: edge
+  relationship: platform-app
+  status: not-a-workflow
+  arazzo: null
