@@ -11,6 +11,8 @@ checked:
 - https://pypi.org/pypi
 - https://registry.npmjs.org
 - docker-hub/integrations/docker-hub-integration-edges.yml
+- opentofu/integrations/opentofu-integration-edges.yml
+- terraform/integrations/terraform-integration-edges.yml
 marketplace_apps: []
 edges:
 - partner_name: AWS Marketplace
@@ -95,6 +97,42 @@ edges:
   category: Docker Verified Publisher
   badges:
   - Docker Verified Publisher
+- partner_name: OpenTofu (opentofu-registry)
+  partner: opentofu
+  partner_match: mirror
+  mirror_match: register
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: opentofu-registry
+  evidence: https://search.opentofu.org/provider/openvpn/openvpn-cloud
+  mirror_of: opentofu/integrations/opentofu-integration-edges.yml
+  apps:
+  - openvpn/openvpn-cloud
+  - openvpn/openvpn-cloud-beta
+  listing_count: 1
+  detected: '2026-10-21'
+  detected_by: mirror-platform-listings.py
+  category: infrastructure-as-code provider registry listing
+- partner_name: Terraform (terraform-registry)
+  partner: terraform
+  partner_match: mirror
+  mirror_match: register
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: terraform-registry
+  evidence: https://registry.terraform.io/providers/OpenVPN/openvpn-cloud
+  mirror_of: terraform/integrations/terraform-integration-edges.yml
+  apps:
+  - OpenVPN/openvpn-cloud
+  - OpenVPN/openvpn-cloud-beta
+  listing_count: 1
+  detected: '2026-10-21'
+  detected_by: mirror-platform-listings.py
+  category: infrastructure-as-code provider registry listing
 source:
 - https://formulae.brew.sh/api/formula.json
 - https://formulae.brew.sh/api/cask.json
